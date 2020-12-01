@@ -139,6 +139,24 @@ class M_Api extends CI_Model {
 
 	}
 
+	public function getDataDevice($device_key)
+	{
+		return $this->db->get_where('device', array('device_key' => $device_key))->row();
+	}
+
+	public function getDataUser($idSidikJari)
+	{
+		return $this->db->get_where('users', array('data_sidik_jari' => $idSidikJari))->row();
+	}
+
+	public function inputTaping($data, $dataSetatusDoor, $device_key)
+	{
+		$this->db->where('device_key', $device_key);
+   		$this->db->update('device', $dataSetatusDoor);
+
+		return $this->db->insert('record_tap', $data);
+	}
+
 }
 
 /* End of file M_Api.php */

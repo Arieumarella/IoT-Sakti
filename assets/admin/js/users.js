@@ -567,7 +567,7 @@ function hapusAdmin(idx) {
           baris += '<tr>'+
                           '<td>'+ no++ +'</td>' +
                           '<td>'+ data[i].name_device +'</td>' +
-                          '<td>'+ data[i].status_door +'</td>' +
+                          '<td>'+ data[i].setatus_door_taping +'</td>' +
                           '<td>'+ data[i].name +'</td>' +
                           '<td>'+ data[i].tap_time +'</td>' +
                         +
