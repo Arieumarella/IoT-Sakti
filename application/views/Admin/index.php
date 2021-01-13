@@ -6,6 +6,9 @@
   <title><?php echo $tittle; ?></title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link href="<?php echo base_url();?>/assets/pace/themes/red/pace-theme-material.css" rel="stylesheet">
+
   <link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/toastr/toastr.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
   <!-- Tell the browser to be responsive to screen width -->
@@ -61,53 +64,9 @@
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-      <a href="<?php echo base_url(); ?>/assets/admin/#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-
+    
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <li class="dropdown notifications-menu">
-            <a href="<?php echo base_url(); ?>/assets/admin/#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="<?php echo base_url(); ?>/assets/admin/#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                    </a>
-                  </li>
-                  <li>
-                    <a href="<?php echo base_url(); ?>/assets/admin/#">
-                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                      page and may cause design problems
-                    </a>
-                  </li>
-                  <li>
-                    <a href="<?php echo base_url(); ?>/assets/admin/#">
-                      <i class="fa fa-users text-red"></i> 5 new members joined
-                    </a>
-                  </li>
-                  <li>
-                    <a href="<?php echo base_url(); ?>/assets/admin/#">
-                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                    </a>
-                  </li>
-                  <li>
-                    <a href="<?php echo base_url(); ?>/assets/admin/#">
-                      <i class="fa fa-user text-red"></i> You changed your username
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="<?php echo base_url(); ?>/assets/admin/#">View all</a></li>
-            </ul>
-          </li>
           <li class="dropdown user user-menu">
             <a href="<?php echo base_url(); ?>/assets/admin/#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?php echo base_url(); ?>/assets/admin/dist/img/avatar5.png" class="user-image" alt="User Image">
@@ -430,7 +389,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url(); ?>/assets/admin/dist/js/demo.js"></script>
 
-
+<script type="text/javascript" src="<?php echo base_url();?>/assets/pace/pace.js"></script>
 <script src="<?php echo base_url(); ?>/assets/toastr/toastr.min.js"></script>
 
 
