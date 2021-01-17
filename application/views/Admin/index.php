@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <link href="<?php echo base_url();?>/assets/pace/themes/red/pace-theme-material.css" rel="stylesheet">
+  <link href="<?php echo base_url();?>/assets/pace/themes/blue/pace-theme-center-radar.css" rel="stylesheet">
 
   <link rel="stylesheet"  href="<?php echo base_url(); ?>/assets/toastr/toastr.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
@@ -64,7 +64,10 @@
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-    
+      <a href="<?php echo base_url(); ?>/assets/admin/#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
